@@ -1,8 +1,9 @@
 import React from 'react';
-import { Accessory } from '../../components/Accessory';
 
 import { BackButton } from '../../components/BackButton';
 import { ImageSlider } from '../../components/ImageSlider';
+import { Accessory } from '../../components/Accessory';
+import { Button } from '../../components/Button';
 
 import SpeedSvg from '../../assets/speed.svg';
 import AccelerationSvg from '../../assets/acceleration.svg';
@@ -24,7 +25,8 @@ import {
   Period,
   Price,
   About,
-  Accessories
+  Accessories,
+  Footer
 } from './styles';
 
 export function CarDetails() {
@@ -58,7 +60,7 @@ export function CarDetails() {
           <Accessory name="3.2s" icon={AccelerationSvg} />
           <Accessory name="800cv" icon={ForceSvg} />
           <Accessory name="Gasolina" icon={GasolineSvg} />
-          <Accessory name="Automático" icon={ExchangeSvg} />
+          <Accessory name="Auto" icon={ExchangeSvg} />
           <Accessory name="2 pessoas" icon={PeopleSvg} />
         </Accessories>
 
@@ -67,6 +69,10 @@ export function CarDetails() {
           Real Maestranza de Sevilla. É um belíssimo carro para quem gosta de acelerar.
         </About>
       </Content>
+
+      <Footer>
+        <Button title="Confirmar" />
+      </Footer>
     </Container>
   );
 }
