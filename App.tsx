@@ -16,7 +16,7 @@ import {
   Archivo_600SemiBold
 } from '@expo-google-fonts/archivo';
 
-import { Scheduling } from './src/screens/Scheduling';
+import { SchedulingDetails } from './src/screens/SchedulingDetails';
 
 import theme from './src/styles/theme';
 import { StatusBar } from 'react-native';
@@ -41,7 +41,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-      <Scheduling />
+      <SchedulingDetails />
     </ThemeProvider>
   );
 }
