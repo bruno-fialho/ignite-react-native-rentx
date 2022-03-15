@@ -20,7 +20,7 @@ import { SchedulingComplete } from './src/screens/SchedulingComplete';
 
 import theme from './src/styles/theme';
 import { StatusBar } from 'react-native';
-import { Routes } from './src/router';
+import { Routes } from './src/routes';
 
 export default function App() {
   const [ fontsLoaded ] = useFonts({
