@@ -16,8 +16,6 @@ import {
   Archivo_600SemiBold
 } from '@expo-google-fonts/archivo';
 
-import { SchedulingComplete } from './src/screens/SchedulingComplete';
-
 import theme from './src/styles/theme';
 import { StatusBar } from 'react-native';
 import { Routes } from './src/routes';
