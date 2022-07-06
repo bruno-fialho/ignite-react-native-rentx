@@ -12,7 +12,7 @@ export function generateInterval(start: DateData, end: DateData) {
   
   eachDayOfInterval({ start: new Date(start.timestamp), end: new Date(end.timestamp) })
     .forEach((day) => {
-      const date = format(getPlatformDate(day), 'yyy-MM-dd');
+      const date = format(getPlatformDate(day), 'yyyy-MM-dd');
 
       interval = {
         ...interval,
