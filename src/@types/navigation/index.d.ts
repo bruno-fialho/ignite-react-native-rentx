@@ -11,6 +11,7 @@ export type RootStackParamList = {
   Scheduling: { car: CarDTO };
   SchedulingDetails: { car: CarDTO, dates: string[] };
   SchedulingComplete: undefined;
+  MyCars: undefined;
 };
 
 declare global {
