@@ -268,7 +268,10 @@
         "2022-07-17",
         "2022-07-29",
         "2022-07-30",
-        "2022-07-31"
+        "2022-07-31",
+        "2022-07-22",
+        "2022-07-23",
+        "2022-07-24"
       ]
     },
     {
@@ -281,7 +284,13 @@
     },
     {
       "id": "52930821-cbea-4b05-9f45-7c02b1bb0d8c",
-      "unavailable_dates": []
+      "unavailable_dates": [
+        "2022-07-26",
+        "2022-07-27",
+        "2022-07-28",
+        "2022-07-29",
+        "2022-07-30"
+      ]
     },
     {
       "id": "49983f6c-a46a-4dfd-a86e-425b8c72e086",
@@ -342,33 +351,35 @@
           "https://storage.googleapis.com/golden-wind/ignite/react-native/images/3.png"
         ]
       },
+      "startDate": "22/07/2022",
+      "endDate": "24/07/2022",
       "id": 1
     },
     {
       "user_id": 1,
       "car": {
-        "id": "ffb71f55-818a-48b1-b7d2-2efc406ede25",
-        "brand": "Porsche",
-        "name": "Panamera",
-        "about": "O Panamera é um automóvel de luxo coupé com porte grande. Tem motorização dianteira V6 e V8. A tração é integral com uma caixa PDK de sete mudanças e dupla embreagem.",
+        "id": "52930821-cbea-4b05-9f45-7c02b1bb0d8c",
+        "brand": "Chevrolet",
+        "name": "Corvette Z06",
+        "about": "O Chevrolet Corvette Z06 inclui freios Brembo de alto desempenho com pinças maiores no conjunto dianteiro, itens aerodinâmicos com capô de fibra de carbono, suspensão para alto desempenho.",
         "rent": {
           "period": "Ao dia",
-          "price": 340
+          "price": 620
         },
         "fuel_type": "gasoline_motor",
-        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/2.png",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/3.png",
         "accessories": [
           {
             "type": "speed",
-            "name": "315km/h"
+            "name": "330km/h"
           },
           {
             "type": "acceleration",
-            "name": "2.9s"
+            "name": "6.2s"
           },
           {
             "type": "turning_diameter",
-            "name": "700 HP"
+            "name": "900 HP"
           },
           {
             "type": "gasoline_motor",
@@ -380,14 +391,17 @@
           },
           {
             "type": "seats",
-            "name": "4 pessoas"
+            "name": "2 pessoas"
           }
         ],
         "photos": [
-          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/4.png",
-          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/5.png"
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/6.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/7.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/8.png"
         ]
       },
+      "startDate": "26/07/2022",
+      "endDate": "30/07/2022",
       "id": 2
     }
   ]
