@@ -1,13 +1,13 @@
 import { eachDayOfInterval, format } from 'date-fns';
 
-import { DateData } from 'react-native-calendars';
+import { DateObject } from 'react-native-calendars';
 import { getPlatformDate } from '../../utils/getPlatformDate';
 
 import theme from '../../styles/theme';
 
 import { MarkedDateProps } from '.';
 
-export function generateInterval(start: DateData, end: DateData) {
+export function generateInterval(start: DateObject, end: DateObject) {
   let interval: MarkedDateProps = {};
   
   eachDayOfInterval({ start: new Date(start.timestamp), end: new Date(end.timestamp) })

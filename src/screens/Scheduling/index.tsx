@@ -4,7 +4,7 @@ import { useNavigation, useRoute } from '@react-navigation/native';
 import { useTheme } from 'styled-components';
 
 import { format } from 'date-fns';
-import { DateData } from 'react-native-calendars';
+import { DateObject } from 'react-native-calendars';
 
 import { getPlatformDate } from '../../utils/getPlatformDate';
 
@@ -39,7 +39,7 @@ interface Params {
 }
 
 export function Scheduling() {
-  const [lastSelectedDate, setLastSelectedDate] = useState<DateData>({} as DateData);
+  const [lastSelectedDate, setLastSelectedDate] = useState<DateObject>({} as DateObject);
   const [markedDates, setMarkedDates] = useState<MarkedDateProps>({} as MarkedDateProps);
   const [rentalPeriod, setRentalPeriod] = useState<RentalPeriod>({} as RentalPeriod);
 
@@ -64,7 +64,7 @@ export function Scheduling() {
     navigation.goBack();
   }
 
-  function handleChangeDate(date: DateData) {
+  function handleChangeDate(date: DateObject) {
     let start = !lastSelectedDate.timestamp ? date : lastSelectedDate;
     let end = date;
 
