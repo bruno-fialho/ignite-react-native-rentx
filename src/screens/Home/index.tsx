@@ -20,6 +20,7 @@ import { CarDTO } from '../../dtos/CarDTO';
 
 import Logo from '../../assets/logo.svg';
 import { Car } from '../../components/Car';
+import { LoadAnimation } from '../../components/LoadAnimation';
 
 import {
   Container,
@@ -28,7 +29,6 @@ import {
   TotalCars,
   CarList,
 } from './styles';
-import { Loading } from '../../components/Loading';
 
 export function Home() {
   const [cars, setCars] = useState<CarDTO[]>([]);
@@ -109,7 +109,7 @@ export function Home() {
         </HeaderContent>
       </Header>
 
-      { loading ? <Loading /> :
+      { !!loading ? <LoadAnimation /> :
         <CarList
           data={cars}
           keyExtractor={item => item.id}
