@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { StyleSheet } from 'react-native';
+import { StyleSheet, BackHandler } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { RFValue } from 'react-native-responsive-fontsize';
 import { RectButton, PanGestureHandler } from 'react-native-gesture-handler';
@@ -88,6 +88,10 @@ export function Home() {
     fetchCars();
   }, [])
 
+  useEffect(() => {
+    BackHandler.addEventListener('hardwareBackPress', () => { return true });
+  }, [])
+
   return (
     <Container>
       <Header>
@@ -96,9 +100,12 @@ export function Home() {
             width={RFValue(108)}
             height={RFValue(12)}
           />
-          <TotalCars>
-            Total de {cars.length} carros
-          </TotalCars>
+          
+          { !loading && (
+            <TotalCars>
+              Total de {cars.length} carros
+            </TotalCars>
+          )}
         </HeaderContent>
       </Header>
 
